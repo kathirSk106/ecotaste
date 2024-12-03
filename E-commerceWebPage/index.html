@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>EcoTaste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+        <div class="logo">
+            <img src="assets/logoss.png" alt="">
+            
+        </div>
+        <div class="navbars">
+            <ul>
+              <li><a href=""><i class="fa-solid fa-house"></i>Home</a></li>
+              <li><a href=""><i class="fa-solid fa-layer-group"></i>Categories</a></li>
+              <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Order</a></li>
+              <li><a href=""><i class="fa-solid fa-phone"></i>Contact</a></li>
+              <li><a href=""><i class="fa-solid fa-circle-question"></i>About</a></li>
+            </ul>
+        </div>
+        <div class="btns">
+          <button onclick="loginshow()">Login</button>
+          <button onclick="show()">Sign up</button>
+    </div>
+    </div>
+    </nav>
+    <div class="overlay"></div>
+    <form class="signup">
+        <div class="signup-items">
+        <img src="assets/logoss.png" alt="">
+        <h2><span>Create</span> Account</h2>
+
+        <label for="fname">Name :</label>
+        <input type="text" id="fname" name="name" placeholder="Enter Name">
+
+        <label for="num">Number :</label>
+        <input type="number" id="num" name="number" placeholder="Enter Number">
+
+        <label for="pwd">Password :</label>
+        <input type="password" id="pwd" name="pswd" placeholder="Enter password">
+
+        <label for="c-pwd">Confirm Password :</label>
+        <input type="password" id="c-pwd" name="cpswd" placeholder="Confirm password">
+
+        <button onclick="s_submit()">Sign Up</button></div>
+    </form >
+    <div class="signup login">
+        <div class="signup-items">
+        <img src="assets/logoss.png" alt="">
+        <h2><span>Login</span></h2>
+        <label for="num">Email :</label>
+        <input type="email" id="num" placeholder="Enter Email">
+        <label for="pwd">Password :</label>
+        <input type="password" id="pwd" placeholder="Enter password">
+        <button onclick="s_submit()">Login</button></div>
+    </div>
+    <div class="home">
+        <div class="home-data">
+            <h1>Explore <span>Healthy</span><br>&Fresh Products</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Incidunt modi veritatis dolore adipisci aut qui amet aliquam sapiente? Nam corporis blanditiis nemo distinctio!</p>
+
+            <button>Shop Now</button>
+         </div>
+        <div class="home-img">
+            <img src="assets/homeimg1.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="ani">
+        <div class="b-img">
+            <img src="assets/category.jpg" alt="">
+        </div>
+        <div class="r-ani">
+
+                <div class="r-ani-data"><h1>Explore <br><span> Categories</span></h1></div>
+
+                <div class="ani-items">
+                    <div class="veg ac">
+                        <img src="assets/1.svg" alt="">
+                        <h3>vegetables</h3>
+                        <p>106 items</p>
+                    </div>
+                    <div class="fruits ac">
+                        <img src="assets/2.svg" alt="">
+                        <h3>Fruits</h3>
+                        <p>455 items</p>
+                    </div>
+                    <div class="cold ac">
+                        <img src="assets/3.svg" alt="">
+                        <h3>cold drinks</h3>
+                        <p>69 items</p>
+                    </div>
+                    <div class="bakery ac">
+                        <img src="assets/4.svg" alt="">
+                        <h3>Bakery</h3>
+                        <p>265 items</p>
+                    </div>
+            
+                 </div>
+        </div>
+    </div>
+
+
+
+         <h2 class="heading opro"><span>Our</span> Products</h2>
+    <section id="product1">
+        <div class="container">
+        <div class="pro">
+                <img src="assets/apple.jpg" alt=""><hr>
+            <div class="data">
+                <span>Chocos</span>
+                <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </div>
+                
+                <h3 class="title">Mixed Fruits Choco Pack</h3>
+                <h3>$54<span><s>$65</s></span></h3>
+            </div>
+            <i class="fa-solid fa-cart-shopping cart"></i>
+            <button class="btn">Buy </button>
+        <h4>Add To Cart</h4>
+        </div>
+
+        <div class="pro">
+            <img src="assets/mango.jpg" alt=""><hr>
+        <div class="data">
+            <span>Chocos</span>
+            <div class="rate">
+                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <h3 class="title">Mixed Fruits Choco Pack</h3>
+            <h3>$54<span><s>$65</s></span></h3>
+        </div>
+    
+        <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+        <button class="btn">Buy </button>
+        <h4>Add To Cart</h4>
+
+    </div>
+
+    <div class="pro">
+        <img src="assets/f1.webp" alt=""><hr>
+    <div class="data">
+        <span>Chocos</span>
+        <div class="rate">
+            <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        </div>
+        
+        <h3 class="title">Mixed Fruits Choco Pack</h3>
+        <h3>$54<span><s>$65</s></span></h3>
+    </div>
+    <i class="fa-solid fa-cart-shopping cart"></i>
+    <button class="btn">Buy </button>
+        <h4>Add To Cart</h4>
+</div>
+
+<div class="pro">
+    <img src="assets/f3.webp" alt=""><hr>
+<div class="data">
+    <span>Chocos</span>
+    <div class="rate">
+        <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    </div>
+    
+    <h3 class="title">Mixed Fruits Choco Pack</h3>
+    <h3>$54<span><s>$65</s></span></h3>
+</div>
+     <i class="fa-solid fa-cart-shopping cart"></i>
+        <button class="btn">Buy </button>
+        <h4>Add To Cart</h4>
+</div>
+       </div>
+    </section>
+          <h2 class="heading trd">Trending <span>Now</span></h2>  
+          
+          
+    <div class="banner">
+
+        <div class="banner-1 banners">
+            <img src="assets/one.png" alt="">
+            <div class="banner-1-data">
+                <h2>Tasty Snack</br> & Fast food</h2>
+            <p>The flavour of<br> something special</p>
+            <button class="btn">Shop Now</button>
+            </div>
+        </div>
+        
+        <div class="banner-2 banners">
+            <img src="assets/two.png" alt="">
+            <div class="banner-2-data">
+                <h2>Fresh Fruits &<br> Vegetables</h2>
+                <p>A healthy meal for every <br>one</p>
+                <button class="btn">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+         <h2 class="heading feu"><span>Featured</span> Products</h2>
+<section id="main-products">
+    <div class="mp-container">
+        <div class="mp-1 mp">
+            <img src="assets/mango.jpg" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4> <div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="mp-1 mp">
+            <img src="assets/s11.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4> <div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="mp-1 mp">
+            <img src="assets/pro1.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4><div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="mp-1 mp">
+            <img src="assets/s0.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4><div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+<section id="main-products">
+    <div class="mp-container">
+        <div class="mp-1 mp">
+            <img src="assets/op1.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4><div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="mp-1 mp">
+            <img src="assets/op8.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4><div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="mp-1 mp">
+            <img src="assets/op6.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4><div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="mp-1 mp">
+            <img src="assets/op7.webp" alt="">
+            <div class="mp-data">
+                <h4>pro Name</h4><div class="mp-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i></div>
+                <h3>$210 <span><s>$260</s></span></h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        
+    </div>
+</section></div>
+
+         <h2 class="heading serv">Our <span>Services</span></h2>
+<section id="services">
+
+    <div class="shpping ser">
+        <img src="assets/1.png" class="imgd" alt="">
+        <div class="data">
+            <h3>Free Shipping</h3>
+            <span>Free shipping on all Us order or above $200</span>
+        </div>
+    </div>
+    <div class="support ser">
+        <img src="assets/2.png" class="imgd" alt="">
+        <div class="data">
+            <h3>24x7 Support</h3>
+            <span>Contact us 24 hours a day, 7 days a week</span>
+        </div>
+    </div>
+    <div class="return ser">
+        <img src="assets/3.png" class="imgd" alt="">
+        <div class="data">
+            <h3>30 Days Return</h3>
+            <span>Simply return it within 30 days for an exchange</span>
+        </div>
+    </div>
+    <div class="payment ser">
+        <img src="assets/4.png" class="imgd" alt="">
+        <div class="data">
+            <h3>Payment Secure</h3>
+            <span>Contact us 24 hours a day, 7 days a week</span>
+        </div>
+    </div>
+
+
+</section>
+             
+<footer><hr class="line">
+    <div class="f-container">
+    <div class="f-logo f-col">
+        <img class="f-l" src="logoss.png" alt="">
+        <p>BlueBerry is the biggest market of grocery products. Get your daily needs from our store.</p>
+        <div class="download">
+            <img src="assets/android.png" alt="">
+            <img src="assets/apple.png" alt="">
+        </div>
+    </div>
+    <div class="catagory f-col">
+        <h4>catagory<hr></h4>
+            <a href="">Dairy & Milk</a>
+            <a href="">Snack & Spice</a>
+            <a href="">Fast Food</a>
+            <a href="">Juice & Drinks</a>
+            <a href="">Bakery</a>
+    </div>
+
+    <div class="company f-col">
+        <h4>company<hr></h4>
+            <a href="">About us</a>
+            <a href="">Delivery</a>
+            <a href="">Legal Notice</a>
+            <a href="">Terms & conditions</a>
+            <a href="">Secure payment</a>
+    </div>
+
+    <div class="account f-col">
+        <h4>account<hr></h4>
+            <a href="">Sign In</a>
+            <a href="">Return Policy</a>
+            <a href="">Become a Vendor</a>
+            <a href="">Affiliate Program</a>
+            <a href="">Payments</a>
+    </div>
+
+    <div class="contact f-col">
+        <h4>contact<hr></h4>
+        <p><i class="fa-solid fa-location-dot"></i>971 Lajamni, Motavarachha, Surat, Gujarat, Bharat 394101.</p>
+            <p><i class="fa-solid fa-phone"></i>+00 9876543210</p>
+            <p><i class="fa-solid fa-envelope"></i>example@email.com</p>
+      </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
